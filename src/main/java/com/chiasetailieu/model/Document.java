@@ -6,8 +6,31 @@ public class Document {
 	private String docSource;
 	private int cateId;
 	private int subcateId;
+	private int userId;
+	private User user;
 	private Category category;
 	private SubCategory subcate;
+	private String cover;
+	
+	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public String getCover() {
+		return cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
+	}
 	public int getDocId() {
 		return docId;
 	}
