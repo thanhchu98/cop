@@ -12,7 +12,7 @@ public class RoleMapper implements GenericMapper<Role> {
 	public Role mapRow(ResultSet resultSet) {
 		try {
 			Role role = new Role();
-			role.setRoleid(resultSet.getInt("role_id"));
+			role.setRoleid(resultSet.getLong("role_id"));
 			role.setRolename(resultSet.getString("role_name"));
 			return role;
 		} catch (SQLException e) {

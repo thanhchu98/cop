@@ -1,12 +1,12 @@
 package com.chiasetailieu.model;
 
 public class Role {
-	private int roleid;
+	private Long roleid;
 	private String rolename;
-	public int getRoleid() {
+	public Long getRoleid() {
 		return roleid;
 	}
-	public void setRoleid(int roleid) {
+	public void setRoleid(Long roleid) {
 		this.roleid = roleid;
 	}
 	public String getRolename() {

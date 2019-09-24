@@ -36,9 +36,9 @@ public class SubcateDAO extends GenericDAO<SubCategory> implements ISubcategoryD
 	}
 
 	@Override
-	public int save(SubCategory subcate) {
+	public Long save(SubCategory subcate) {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override

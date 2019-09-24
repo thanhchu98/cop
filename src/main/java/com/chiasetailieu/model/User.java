@@ -3,7 +3,7 @@ package com.chiasetailieu.model;
 import java.util.List;
 
 public class User {
-	private int userid;
+	private Long userid;
 	private String username;
 	private String password;
 	private Role role;
@@ -21,10 +21,10 @@ public class User {
 	public void setDocuments(List<Document> documents) {
 		this.documents = documents;
 	}
-	public int getUserid() {
+	public Long getUserid() {
 		return userid;
 	}
-	public void setUserid(int userid) {
+	public void setUserid(Long userid) {
 		this.userid = userid;
 	}
 	public String getUsername() {

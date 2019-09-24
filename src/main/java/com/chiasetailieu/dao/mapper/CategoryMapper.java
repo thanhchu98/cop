@@ -12,7 +12,7 @@ public class CategoryMapper implements GenericMapper<Category> {
 		// TODO Auto-generated method stub
 		try {
 			Category cate = new Category();
-			cate.setCategoryID(rs.getInt("cate_id"));
+			cate.setCategoryID(rs.getLong("cate_id"));
 			cate.setCategoryName(rs.getString("cate_name"));
 			return cate;
 		} catch (SQLException e) {

@@ -12,7 +12,7 @@ public class SubcateMapper implements GenericMapper<SubCategory>{
 		// TODO Auto-generated method stub
 		try {
 			SubCategory subcate = new SubCategory();
-			subcate.setSubcategoryID(rs.getInt("subcate_id"));
+			subcate.setSubcategoryID(rs.getLong("subcate_id"));
 			subcate.setCategoryId(rs.getInt("cate_id"));
 			subcate.setSubcategoryName(rs.getString("subcate_name"));
 			return subcate;

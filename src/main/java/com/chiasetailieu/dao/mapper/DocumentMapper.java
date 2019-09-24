@@ -12,7 +12,7 @@ public class DocumentMapper implements GenericMapper<Document>{
 		// TODO Auto-generated method stub
 		try {
 			Document doc = new Document();
-			doc.setDocId(rs.getInt("doc_id"));
+			doc.setDocId(rs.getLong("doc_id"));
 			doc.setDocName(rs.getString("doc_name"));
 			doc.setCateId(rs.getInt("cate_id"));
 			doc.setSubcateId(rs.getInt("subcate_id"));

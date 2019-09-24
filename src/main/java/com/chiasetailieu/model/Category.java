@@ -3,7 +3,7 @@ package com.chiasetailieu.model;
 import java.util.List;
 
 public class Category {
-	private int categoryID;
+	private Long categoryID;
 	private String categoryName;
 	private List<SubCategory> subcates;
 	
@@ -14,10 +14,10 @@ public class Category {
 	public void setSubcates(List<SubCategory> subcates) {
 		this.subcates = subcates;
 	}
-	public int getCategoryID() {
+	public Long getCategoryID() {
 		return categoryID;
 	}
-	public void setCategoryID(int categoryID) {
+	public void setCategoryID(Long categoryID) {
 		this.categoryID = categoryID;
 	}
 	public String getCategoryName() {

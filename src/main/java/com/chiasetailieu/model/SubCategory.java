@@ -1,14 +1,14 @@
 package com.chiasetailieu.model;
 
 public class SubCategory {
-	private int subcategoryID;
+	private Long subcategoryID;
 	private String subcategoryName;
 	private Category category;
 	private int categoryId;
-	public int getSubcategoryID() {
+	public Long getSubcategoryID() {
 		return subcategoryID;
 	}
-	public void setSubcategoryID(int subcategoryID) {
+	public void setSubcategoryID(Long subcategoryID) {
 		this.subcategoryID = subcategoryID;
 	}
 	public String getSubcategoryName() {

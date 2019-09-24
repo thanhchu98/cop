@@ -14,7 +14,7 @@ public class UserMapper implements GenericMapper<User> {
 		try {
 			RoleMapper rolemap = new RoleMapper();
 			User user = new User();
-			user.setUserid(rs.getInt("user_id"));
+			user.setUserid(rs.getLong("user_id"));
 			user.setUsername(rs.getString("user_name"));
 			user.setPassword(rs.getString("password"));
 			Role role = rolemap.mapRow(rs);

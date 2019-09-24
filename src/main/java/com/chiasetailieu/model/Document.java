@@ -1,7 +1,7 @@
 package com.chiasetailieu.model;
 
 public class Document {
-	private int docId;
+	private Long docId;
 	private String docName;
 	private String docSource;
 	private int cateId;
@@ -31,10 +31,10 @@ public class Document {
 	public void setCover(String cover) {
 		this.cover = cover;
 	}
-	public int getDocId() {
+	public Long getDocId() {
 		return docId;
 	}
-	public void setDocId(int docId) {
+	public void setDocId(Long docId) {
 		this.docId = docId;
 	}
 	public String getDocName() {
