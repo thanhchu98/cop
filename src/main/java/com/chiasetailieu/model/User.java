@@ -2,12 +2,20 @@ package com.chiasetailieu.model;
 
 import java.util.List;
 
-public class User {
+public class User extends AbstractModel<User>{
 	private Long userid;
 	private String username;
 	private String password;
+	private Long roleId;
 	private Role role;
 	private List<Document> documents;
+	
+	public Long getRoleId() {
+		return roleId;
+	}
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
 	
 	public Role getRole() {
 		return role;

@@ -1,5 +1,7 @@
 package com.chiasetailieu.service.impl;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import com.chiasetailieu.dao.IRoleDAO;
@@ -12,14 +14,24 @@ public class UserService implements IUserService{
 	@Inject
 	IUserDAO userDAO;
 	
-	@Inject
-	IRoleDAO roleDAO;
 	
 	@Override
 	public User save(User user) {
 		// TODO Auto-generated method stub
 		Long newId = userDAO.save(user);
 		return userDAO.findById(newId);
+	}
+
+	@Override
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return userDAO.findAll();
+	}
+
+	@Override
+	public void delete(User user) {
+		// TODO Auto-generated method stub
+		userDAO.delete(user);
 	}
 
 }

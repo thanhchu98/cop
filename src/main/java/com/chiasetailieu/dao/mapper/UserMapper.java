@@ -12,13 +12,11 @@ public class UserMapper implements GenericMapper<User> {
 	public User mapRow(ResultSet rs) {
 		// TODO Auto-generated method stub
 		try {
-			RoleMapper rolemap = new RoleMapper();
 			User user = new User();
 			user.setUserid(rs.getLong("user_id"));
 			user.setUsername(rs.getString("user_name"));
 			user.setPassword(rs.getString("password"));
-			Role role = rolemap.mapRow(rs);
-			user.setRole(role);
+			user.setRoleId(rs.getLong("role_id"));
 			return user;
 		} catch (SQLException e) {
 			// TODO: handle exception

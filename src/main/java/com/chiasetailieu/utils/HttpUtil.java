@@ -22,7 +22,7 @@ public class HttpUtil {
 		return null;
 	}
 	
-	public static HttpUtil of (BufferedReader reader) {
+	public static HttpUtil of(BufferedReader reader) {
 		StringBuilder sb = new StringBuilder();
 		try {
 			String line;
